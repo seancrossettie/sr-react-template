@@ -14,7 +14,7 @@ const getData = () => new Promise((resolve, reject) => {
 
 // Create request
 const createData = (obj) => new Promise((resolve, reject) => {
-  axios.patch(`${dbURL}/data.json`, obj)
+  axios.post(`${dbURL}/data.json`, obj)
     .then((response) => {
       const body = { firebaseKey: response.data.name };
       axios.patch(`${dbURL}/data/${response.data.name}.json`, body)
@@ -26,7 +26,7 @@ const createData = (obj) => new Promise((resolve, reject) => {
 });
 
 // Delete request
-const deleteData = (firebaseKey) => new Promise((reject, resolve) => {
+const deleteData = (firebaseKey) => new Promise((resolve, reject) => {
   axios.delete(`${dbURL}/data/${firebaseKey}.json`)
     .then(() => {
       getData((resp) => resolve(resp));
