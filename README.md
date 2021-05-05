@@ -8,7 +8,13 @@ To run, install npm
 npm install
 ``
 
-### Packages
+Then, install react-router-dom
+
+``
+npm i react-router-dom
+``
+
+## Packages
 Included in this template are the following packages/frameworks/CDNs
 - Material UI Core
 
