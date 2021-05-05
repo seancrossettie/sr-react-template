@@ -29,14 +29,16 @@ const createData = (obj) => new Promise((resolve, reject) => {
 const deleteData = (firebaseKey) => new Promise((reject, resolve) => {
   axios.delete(`${dbURL}/data/${firebaseKey}.json`)
     .then(() => {
-      getData().then(resolve);
+      getData((resp) => resolve(resp));
     })
     .catch((error) => reject(error));
 });
 
 const updateData = (obj) => new Promise((resolve, reject) => {
   axios.patch(`${dbURL}/data/${obj.firebaseKey}.json`, obj)
-    .then(() => getData().then(resolve))
+    .then(() => {
+      getData((resp) => resolve(resp));
+    })
     .catch((error) => reject(error));
 });
 
