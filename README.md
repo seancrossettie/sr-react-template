@@ -30,6 +30,11 @@ npm install @material-ui/icons
 
 ``
   npm install moment --save
+  
+``
+- Styled Components
+``
+npm install --save styled-components
 ``
 - Bootstrap (included)
 - Firebase Auth (included)
