@@ -30,9 +30,10 @@ npm install @material-ui/icons
 
 ``
   npm install moment --save
-  
 ``
+
 - Styled Components
+
 ``
 npm install --save styled-components
 ``
@@ -40,3 +41,16 @@ npm install --save styled-components
 - Firebase Auth (included)
 
 **Before using this template, please update the .env file with you firbase info if you plan on using firebase for your project; otherwise, delete all firbase boilerplate related code to remove errors.**
+
+# README Template Below
+
+# Title
+
+## Motivation
+
+## Technologies
+## User Stories
+
+## Screenshots
+## Link to Deployed Website
+## Video Walkthrough
